@@ -1,0 +1,43 @@
+{
+  "name": "@chubbyjs/psr-http-server-middleware",
+  "version": "1.0.0",
+  "description": "Common interface for HTTP server-side middleware (PHP FIG PSR-15).",
+  "keywords": [
+    "psr",
+    "psr-15",
+    "http-server-middleware-interface"
+  ],
+  "author": "Dominik Zogg",
+  "license": "MIT",
+  "repository": "chubbyjs/psr-http-server-middleware",
+  "scripts": {
+    "cs-fix": "prettier --write src",
+    "cs": "prettier --check src",
+    "build": "tsc",
+    "prepare": "rm -Rf dist && npm run build && npm run cs"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "@chubbyjs/psr-http-message": "^1.0.0",
+    "@chubbyjs/psr-http-server-handler": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "12",
+    "prettier": "2.1.2",
+    "typescript": "^4.0.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
