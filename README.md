@@ -15,7 +15,7 @@ Common interface for HTTP server-side middleware ([PHP FIG][2] [PSR-15][3]).
 Through [NPM](https://www.npmjs.com) as [@chubbyjs/psr-http-server-middleware][1].
 
 ```sh
-npm i @chubbyjs/psr-http-server-middleware@1.1.0
+npm i @chubbyjs/psr-http-server-middleware@1.1.1
 ```
 
 ## Copyright

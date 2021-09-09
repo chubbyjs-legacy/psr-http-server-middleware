@@ -3,10 +3,7 @@ import ServerRequestInterface from '@chubbyjs/psr-http-message/dist/ServerReques
 import RequestHandlerInterface from '@chubbyjs/psr-http-server-handler/dist/RequestHandlerInterface';
 
 interface MiddlewareInterface {
-    process(
-        request: ServerRequestInterface,
-        handler: RequestHandlerInterface,
-    ): ResponseInterface | Promise<ResponseInterface>;
+    process(request: ServerRequestInterface, handler: RequestHandlerInterface): Promise<ResponseInterface>;
 }
 
 export default MiddlewareInterface;
